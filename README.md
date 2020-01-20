@@ -2,6 +2,8 @@
 
 Fuente: [geekl0g](https://geekl0g.wordpress.com/2019/09/02/reto-dc506-4-agosto/)
 
+![dc506](img/dc506.png)
+
 El grupo de ciberseguridad DC506 ha estado realizando, mes a mes, una serie de desafíos para que sus integrantes se diviertan resolviendo retos y acertijos de ciberseguridad, hacking e informática. El reto #4 correspondiente al mes de Agosto inicia con un archivo comprimido: zero.zip.
 
 El primer paso fue, verificar qué hay dentro del Zip. Se extrae un único archivo: zero.txt; que a simple vista parece un archivo lleno de ceros (0). Se verificó el tipo de archivo con el comando `file` en la terminal de Linux.
@@ -15,7 +17,7 @@ zero.txt: UTF-8 Unicode text, with very long lines, with no line terminators
 Se trata de un archivo de texto plano en formato UTF-8, sin embargo debe haber algo más. Por lo que el siguiente paso fue utilizar `cat` para verificar caracteres "ocultos".
 
 ```
-$ cat --show-all zero.txt 
+$ cat --show-all zero.txt
 0M-bM-^@M-^LM-bM-^@M-^K0M-bM-^@M-^KM-bM-^@M-^L0......
 ```
 
@@ -60,3 +62,5 @@ flag{cryptostegwithzerowidthspacenonjoiner}
 
 
 ¡Así que nuestro **flag** secreto es `cryptostegwithzerowidthspacenonjoiner`!
+
+![author](img/author.png)
